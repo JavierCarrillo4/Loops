@@ -18,6 +18,11 @@ for i, v in pairs(myTable) do	-- i is the index, v is the value (table)
 	print(v)
 end
 
+for index, items in ipairs(myTable) do	-- ipairs returns items in table in order rather than scrammbled
+	print(index)
+	print(items)
+end
+
 wait(5)
 
 while #game.Players:GetPlayers() > 0 do	-- While condition is true run loop
